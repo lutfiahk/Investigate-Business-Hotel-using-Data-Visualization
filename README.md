@@ -74,4 +74,79 @@ This project will use a dataset that contain booking informations from resorts a
   
   
 There are 180 rows of data that have no guest, so we will drop these records. And there is booking record that has negative adr value, and also the is booking record   that has an extremely high value of adr with canceled status. So we will drop these records too.
-    
+
+<h2>Data Analysis</h2>
+
+<h3>Customer Characteristics</h3>
+
+<p align = "center">
+  <img src = "https://github.com/lutfiahk/Investigate-Business-Hotel-using-Data-Visualization/assets/99700225/2e10bf6a-267d-42fb-b40a-c09feb810214"/ width = "300">
+</p>
+
+<b>37.1%</b> of the 119,209 bookings have been canceled.
+
+<p align = "center">
+  <img src = "https://github.com/lutfiahk/Investigate-Business-Hotel-using-Data-Visualization/assets/99700225/49587f65-c8a5-4e5a-8b0a-4f7a18a64905"/ width = "300">
+</p>
+
+The majority of customers is a new customer, and the number of canceled booking from new customer is higher than from the repeated customer. But we need to check if the proportion is different or not by conducting z-proportion test. 
+
+> Z-statistic: 28.91<br>
+> p-value: 0.0<br>
+> The difference in proportions between the two groups is statistically significant, canceled Booking of New Customer has the highest proportion: 0.38<br>
+
+The z-proportion test revealed a significant difference between the new customer and repeated guest groups in terms of canceled bookings, with new customers having the highest proportion at 38% of total new customers.
+
+<p align = "center">
+  <img src = "https://github.com/lutfiahk/Investigate-Business-Hotel-using-Data-Visualization/assets/99700225/13c2c63c-0493-489f-94c6-a7dce12bf165"/ width = "300">
+</p>
+
+66.4% of bookings are for City Hotels, which are usually found in urban areas, providing convenient access to business districts, shopping centers, and transportation hubs. Resort hotels, on the other hand, are situated in scenic destinations like beaches or mountains, offering natural surroundings and recreational activities.
+
+This makes sense because the majority of customers are not families, indicating that there may be more customers using hotels for business travel or reasons other than vacation purposes.
+
+<p align = "center">
+  <img src = "https://github.com/lutfiahk/Investigate-Business-Hotel-using-Data-Visualization/assets/99700225/0d9bd163-85b7-4517-8611-1d55c093f07e"/ width = "300">
+</p>
+
+<h3>Monthly Hotel Booking Analysis Based on Hotel Type</h3>
+
+<p align = "center">
+  <img src = "https://github.com/lutfiahk/Investigate-Business-Hotel-using-Data-Visualization/assets/99700225/f00734e1-64d8-4bd7-9673-1d9a9734ef6d"/ width = "500">
+</p>
+
+High booking numbers are around the months of July until October. During the year, city hotels are booked more frequently than resort hotels.
+
+As we know, July to October is not the holiday season, and the majority of customers are not families. Therefore, it is likely that many customers are traveling for business purposes or reasons other than vacation. Moreover, city hotels are typically located in the center of the city where many offices and economic activities take place
+
+<h3>Impact Analysis of Stay Duration on Hotel Bookings Cancellation Rates</h3>
+
+<p align = "center">
+  <img src = "https://github.com/lutfiahk/Investigate-Business-Hotel-using-Data-Visualization/assets/99700225/d3d34c38-a12d-48a8-9cec-cd38f2d3206c"/ width = "500">
+</p>
+
+Basically, the cancellation rate of the city hotel is higher than the resort hotel. It is known that the longer the stay duration of customers, the higher the cancellation rate at the city hotel. The cancellation rate of the resort hotel tends to be consistent, ranging from 27% to 45%.
+
+<b>We need to highlight the cancellation rate of the city hotel. The cancellation rate for bookings with a stay duration of more than 2 weeks is over 50%, which is a high number.</b>
+
+<h3>Impact Analysis of Lead Time on Hotel Bookings Cancellation Rate</h3>
+
+<p align = "center">
+  <img src = "https://github.com/lutfiahk/Investigate-Business-Hotel-using-Data-Visualization/assets/99700225/56daa173-7485-430b-b995-0903ed321db8"/ width = "500">
+</p>
+
+The cancellation rate of the city hotel for each lead time is higher than that of the resort hotels. As we know, the lead time of more than 9 months is particularly high, especially for the city hotel that reach above 70%.
+
+Therefore, the company needs to develop a strategy to decrease the cancellation rate by considering offering special packages or deals specifically for bookings with high lead time. This can provide added value to customers and encourage them to proceed with their bookings.
+
+<h2>Conclusion</h2>
+
+* The majority of customers are non-family customers, who book city hotels which are mainly located in the center of the city. The majority of the customer tends to be on non-vacancy purpose. The company needs to make strategies or marketing that refer to the needs and preferences of these customers.
+
+* Above 90% of the customers are new customers. Having a high number of new customers is a positive indication of the company's ability to attract new business, but the company needs to be focuses on building customer loyalty. 
+
+    Therefore, the company should implement strategies that prioritize customer retention, such as loyalty programs, personalized experiences, and excellent customer service, to ensure a strong foundation of loyal customers and sustained business growth.
+
+* For the city hotel, the longer the stay duration, the higher the cancellation rate tends to be. Therefore, the company needs to implement promotions to decrease the cancellation rate, such as offering discounts for customers who stay for more than 2 weeks.
+
+* As we know the longer the lead time, the cancellation rate tends to be higher, the company needs to develop a strategy to decrease the cancellation rate by considering offering special packages or deals specifically for bookings with high lead time.  This can make customers change their minds and encourage them to proceed with their booking.
